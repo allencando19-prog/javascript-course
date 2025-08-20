@@ -100,6 +100,59 @@ console.log("x starts as:", x);
 x--;
 console.log("x starts as:", x);
 
+console.log("=== COMPARISON OPERATORS ===");
+ 
+console.log("Age comparison:");
+console.log(ageJonas > ageSarah); // true
+console.log(ageSarah >= 18); // true
+console.log(ageJonas < 30);
+ 
+console.log("Number comparison:");
+console.log(25 > 20); // true
+console.log(15 < 10); // true
+console.log(18 >= 10); // true
+console.log(16 <= 15); // true
+ 
+const isFullAge = ageSarah >= 18;
+console.log("Is Sarah an adult:", isFullAge); // true
+ 
+console.log("Complex comparison:");
+console.log(now - 1991 > now - 2018); // true
+ 
+let z, y;
+z = y = 25 - 10 -5;
+console.log(z, y); // 10
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+
+////////////////////////////////////
+// Coding Challenge #1 - BMI Calculator
+
+// Test Data 1
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+ 
+const bmiMark = massMark / heightMark ** 2;
+const bmiJohn = massJohn / heightJohn ** 2;
+console.log("Mark's BMI:", bmiMark);
+console.log("John's BMI:", bmiJohn);
+console.log("Is Mark's BMI higher than John's?", bmiMark > bmiJohn); // true
+ 
+// Test Data 2
+const massMark2 = 95;      
+ 
+const heightMark2 = 1.88;
+const massJohn2 = 85;
+const heightJohn2 = 1.76;
+const bmiMark2 = massMark2 / heightMark2 ** 2;
+const bmiJohn2 = massJohn2 / heightJohn2 ** 2;
+console.log("Mark's BMI:", bmiMark2);
+console.log("John's BMI:", bmiJohn2);
+console.log("Is Mark's BMI higher than John's?", bmiMark2 > bmiJohn2);
+
 
 
 
